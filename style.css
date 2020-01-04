@@ -1,0 +1,47 @@
+body
+{
+	background-color: #328784;
+
+}
+
+
+button{
+	width: 100px;
+}
+
+input{
+	width: 100px;
+	margin-left: 35px;
+	border-radius: 7px;
+	text-align: center;
+}
+
+h1
+{
+	text-align: center;
+	font-size: 100px;
+	background: linear-gradient( #000000 , #fff);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent
+}
+
+#resultat{
+	background-color: grey;
+}
+
+#span1{
+	display: none;
+	color: red;
+}
+
+#span2{
+	display: none;
+}
+
+input:valid{
+	background-color: #bbf7ca;
+}
+
+input:invalid{
+	background-color: #fccfcf;
+}

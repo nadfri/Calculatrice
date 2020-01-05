@@ -1,47 +1,160 @@
-body
-{
-	background-color: #328784;
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+
+
+body {
+    background-color: gray;
+}
+
+#page {
+	width: 700px;
+    height: 1000px;
+
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+
+    background-color: #d5d5d5;
+    border: solid 1px gold;
+    border-radius: 10px;
+
+
+}
+
+header {
+	height: 100px;
+
+    display: flex;
+    border: solid 2px grey;
+    border-radius: 10px;
+
+
+}
+
+h1 {
+    margin: auto;
+    text-align: center;
+
+    font-size: 70px;
+    font-family: 'Lobster', cursive;
+    background: -webkit-linear-gradient(#333, silver);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+p {
+	margin: 5px;
+    font-size: 1.9em;
 
 }
 
 
-button{
-	width: 100px;
+button {
+    width: 90px;
+    height: 90px;
+
+    margin: auto;
+    text-align: center;
+    font-size: 50px;
+
+    background: linear-gradient(#969696, #d6d6d6);
+    border-radius: 5px;
+
 }
 
-input{
-	width: 100px;
-	margin-left: 35px;
-	border-radius: 7px;
-	text-align: center;
+
+#nombres {
+	height: 50px;
+
+    display: flex;
+    justify-content: space-between;
+
 }
 
-h1
-{
-	text-align: center;
-	font-size: 100px;
-	background: linear-gradient( #000000 , #fff);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent
+
+input {
+	width: 280px;
+
+    margin: auto;
+    text-align: center;
+    font-size: 1.5em;
+    border-radius: 7px;
 }
 
-#resultat{
-	background-color: grey;
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
 }
 
-#span1{
-	display: none;
-	color: red;
+/* Chrome */
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+       -webkit-appearance: none;
+       margin: 0;
 }
 
-#span2{
-	display: none;
+#span1,
+#span2 {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+
+	margin: auto;
+    text-align: center;
+    font-size: 25px;
+    background-color: silver;
 }
 
-input:valid{
-	background-color: #bbf7ca;
+
+#operateur {
+    height: 100px;
+
+    display: flex;
+    margin: auto;
 }
 
-input:invalid{
-	background-color: #fccfcf;
+
+
+
+#resultat {
+    height: 710px;
+
+    border: solid 2px grey;
+    border-radius: 10px;
+    
+}
+
+#resultat span {
+    font-size: 0.7em;
+}
+
+fieldset {
+    background: silver;
+}
+
+legend {
+    font-size: 2em;
+    font-weight: bold;
+    color: #3d3d3d;
+}
+
+
+#invalide {
+	height: 20px;
+
+    visibility: hidden;
+	margin: auto;
+    text-align: center;
+    background-color: #fccfcf;
+    color: red;
+}
+
+
+input:valid {
+    background-color: #bbf7ca;
+}
+
+input:invalid {
+    background-color: #fccfcf;
 }

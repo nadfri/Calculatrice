@@ -3,9 +3,11 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
     <title>Calculatrice</title>
     <script src="script.js">></script>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" type="image/ico" href="favicon.ico">
 </head>
 
 <body>
@@ -20,10 +22,17 @@
             <div id="invalide"><i>Entrez un nombre valide</i></div>
 
             <div id="nombres">
-                <input id="nombre1" name="nombre1" type="number" step="any" placeholder="Nombre 1 Ex: 5" required autofocus>
-                <div id="span1"></div>
-                <input id="nombre2" name="nombre2" type="number" step="any" placeholder="Nombre 2 Ex: 10" required>
-                <div id="span2"></div>
+
+                <div class="responsive">
+                	<input id="nombre1" name="nombre1" type="number" step="any" placeholder="Nombre 1 Ex: 5" required autofocus>
+                	<div id="span1"></div>
+            	</div>
+
+            	<div class="responsive">
+                	<input id="nombre2" name="nombre2" type="number" step="any" placeholder="Nombre 2 Ex: 10" required>
+                	<div id="span2"></div>
+            	</div>
+
             </div>
 
             <div id="operateur">

@@ -35,7 +35,7 @@ window.onload = function() {
         if ( verif(a, b) ) 
         {
             let resultat = parseFloat(a) + parseFloat(b);
-            idResultat.innerHTML += `<p>${a} <span>➕</span> ${b} = ${resultat} <p>`;
+            idResultat.innerHTML += `<p>${a} <span>➕</span> ${b} = ${resultat} </p>`;
         }
     };
 
@@ -44,7 +44,7 @@ window.onload = function() {
         if (verif(a, b))
         {
             let resultat = parseFloat(a) - parseFloat(b);
-            idResultat.innerHTML += `<p>${a} <span>➖</span> ${b} = ${resultat} <p>`;
+            idResultat.innerHTML += `<p>${a} <span>➖</span> ${b} = ${resultat} </p>`;
     	}
     };
 
@@ -53,7 +53,7 @@ window.onload = function() {
         if (verif(a, b))
         {
             let resultat = parseFloat(a) * parseFloat(b);
-            idResultat.innerHTML += `<p>${a} <span>✖️</span> ${b} = ${resultat} <p>`;
+            idResultat.innerHTML += `<p>${a} <span>✖️</span> ${b} = ${resultat} </p>`;
         }
     };
 
@@ -63,9 +63,9 @@ window.onload = function() {
         if (verif(a, b))
         {
         	let resultat = parseFloat(a) / parseFloat(b);
-            if(b=="0") idResultat.innerHTML +=`<p>${a} / ${b} = <i>division par 0 impossible</i> <p>`;
+            if(b=="0") idResultat.innerHTML +=`<p>${a} / ${b} = <i>division par 0 impossible</i> </p>`;
 
-        	else idResultat.innerHTML += `<p>${a} <span>➗</span> ${b} = ${resultat} <p>`; 
+        	else idResultat.innerHTML += `<p>${a} <span>➗</span> ${b} = ${resultat} </p>`; 
         }
     };
     

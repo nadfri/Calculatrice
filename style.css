@@ -6,7 +6,7 @@ body {
 }
 
 #page {
-	width: 700px;
+    width: 700px;
     height: 1000px;
 
     display: flex;
@@ -16,25 +16,21 @@ body {
     background-color: #d5d5d5;
     border: solid 1px gold;
     border-radius: 10px;
-
-
 }
 
 header {
-	height: 100px;
+    height: 100px;
 
     display: flex;
     border: solid 2px grey;
     border-radius: 10px;
-
-
 }
 
 h1 {
     margin: auto;
     text-align: center;
 
-    font-size: 70px;
+    font-size: 80px;
     font-family: 'Lobster', cursive;
     background: -webkit-linear-gradient(#333, silver);
     -webkit-background-clip: text;
@@ -44,37 +40,32 @@ h1 {
 
 
 p {
-	margin: 5px;
+    margin: 5px;
     font-size: 1.9em;
+}
 
+span{
+	font-size: 0.8em;
 }
 
 
-button {
-    width: 90px;
-    height: 90px;
-
-    margin: auto;
-    text-align: center;
-    font-size: 50px;
-
-    background: linear-gradient(#969696, #d6d6d6);
-    border-radius: 5px;
-
-}
 
 
 #nombres {
-	height: 50px;
+    height: 50px;
 
     display: flex;
     justify-content: space-between;
+}
 
+.responsive{
+	width: 50%;
+	display: flex;
 }
 
 
 input {
-	width: 280px;
+    width: 280px;
 
     margin: auto;
     text-align: center;
@@ -90,8 +81,8 @@ input[type=number] {
 /* Chrome */
 input::-webkit-inner-spin-button,
 input::-webkit-outer-spin-button {
-       -webkit-appearance: none;
-       margin: 0;
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 #span1,
@@ -100,7 +91,7 @@ input::-webkit-outer-spin-button {
     height: 40px;
     line-height: 40px;
 
-	margin: auto;
+    margin: auto;
     text-align: center;
     font-size: 25px;
     background-color: silver;
@@ -114,6 +105,19 @@ input::-webkit-outer-spin-button {
     margin: auto;
 }
 
+button {
+    width: 90px;
+    height: 90px;
+
+    margin: auto;
+    text-align: center;
+    font-size: 50px;
+
+    background: linear-gradient(#969696, #d6d6d6);
+    border-radius: 5px;
+
+}
+
 
 
 
@@ -122,12 +126,9 @@ input::-webkit-outer-spin-button {
 
     border: solid 2px grey;
     border-radius: 10px;
-    
+
 }
 
-#resultat span {
-    font-size: 0.7em;
-}
 
 fieldset {
     background: silver;
@@ -141,10 +142,10 @@ legend {
 
 
 #invalide {
-	height: 20px;
+    height: 20px;
 
     visibility: hidden;
-	margin: auto;
+    margin: auto;
     text-align: center;
     background-color: #fccfcf;
     color: red;
@@ -157,4 +158,96 @@ input:valid {
 
 input:invalid {
     background-color: #fccfcf;
+}
+
+/*-------------------------------------------------Responsive--------------------------------------------------------*/
+
+@media all and (max-device-width: 480px) {
+
+#page {
+    width:  100%;
+    height: 100%;
+}
+
+header {
+    height: 10vh;
+
+}
+
+h1 {
+    font-size: 6vh;
+
+}
+
+
+
+p {
+	margin: 1vh;
+    font-size: 1.2em;
+}
+
+
+
+#nombres {
+    height: 13vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.responsive{
+	width: 95vw;
+
+}
+
+
+input {
+    width: 80vw;
+}
+
+
+
+#span1,
+#span2 {
+    width: 10vw;
+    height: 10vw;
+    line-height: 11vw;
+    font-size: 1.7em;
+
+}
+
+
+
+#operateur {
+    height: 12vh;
+
+}
+
+button {
+    width: 18vw;
+    height: 18vw;
+    font-size: 2em;
+}
+
+
+#resultat {
+    height: 55vh;
+
+
+}
+
+
+legend {
+    font-size: 1.5em;
+
+}
+
+
+#invalide {
+    height: 3vh;
+
+}
+
+
+
 }

@@ -2,7 +2,8 @@
 
 
 body {
-    background-color: gray;
+    background-color: grey;
+    margin: 0;
 }
 
 #page {
@@ -15,7 +16,7 @@ body {
 
     background-color: #d5d5d5;
     border: solid 1px gold;
-    border-radius: 10px;
+    border-radius: 7px;
 }
 
 header {
@@ -23,7 +24,9 @@ header {
 
     display: flex;
     border: solid 2px grey;
-    border-radius: 10px;
+    border-radius: 7px;
+    background: -webkit-linear-gradient(#d5d5d5, silver);
+
 }
 
 h1 {
@@ -32,7 +35,7 @@ h1 {
 
     font-size: 80px;
     font-family: 'Lobster', cursive;
-    background: -webkit-linear-gradient(#333, silver);
+    background: -webkit-linear-gradient(#3f3f3f, #828282);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -48,7 +51,14 @@ span{
 	font-size: 0.8em;
 }
 
+#invalide {
+    height: 20px;
 
+    visibility: hidden;
+    margin: auto;
+    text-align: center;
+    color: red;
+}
 
 
 #nombres {
@@ -58,10 +68,13 @@ span{
     justify-content: space-between;
 }
 
+
+
 .responsive{
 	width: 50%;
 	display: flex;
 }
+
 
 
 input {
@@ -121,13 +134,12 @@ button {
 }
 
 
-
-
 #resultat {
-    height: 710px;
+    height: 700px;
 
+    margin: auto;
     border: solid 2px grey;
-    border-radius: 10px;
+    border-radius: 7px;
     overflow: auto;
 
 }
@@ -144,16 +156,11 @@ legend {
 }
 
 
-#invalide {
-    height: 20px;
 
-    visibility: hidden;
-    margin: auto;
-    text-align: center;
-    background-color: #eaeaea;
-    color: red;
+input::placeholder{
+	font-style: italic;
+	color: #c6c6c6;
 }
-
 
 input:valid {
     background-color: #bbf7ca;
@@ -161,14 +168,17 @@ input:valid {
 
 input:invalid {
     background-color: #f4ebeb;
+
+
 }
 
 /*-------------------------------------------------Responsive--------------------------------------------------------*/
 
 @media all and (max-device-width: 480px) {
 
+
 #page {
-    width:  100%;
+    width:  99%;
     height: 100%;
 }
 
@@ -190,22 +200,28 @@ p {
 }
 
 
+#invalide {
+    height: 2vh;
+
+}
+
 
 #nombres {
-    height: 13vh;
+    height: 14vh;
 
     display: flex;
+    justify-content: space-around;
     flex-direction: column;
 }
 
 .responsive{
-	width: 95vw;
+	width: 100%;
 
 }
 
 
 input {
-    width: 80vw;
+    width: 85vw;
 }
 
 
@@ -234,7 +250,7 @@ button {
 
 
 #resultat {
-    height: 55vh;
+    height: 58vh;
 
 
 }
@@ -245,11 +261,6 @@ legend {
 
 }
 
-
-#invalide {
-    height: 3vh;
-
-}
 
 
 

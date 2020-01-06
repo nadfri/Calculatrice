@@ -25,6 +25,8 @@ window.onload = function() {
         else 
         {   
             idDivInvalide.style.visibility = "hidden";
+            idSpan1.innerHTML   = " ✔️";
+            idSpan2.innerHTML   = " ✔️";
         	return true;
         }
     };
@@ -63,7 +65,7 @@ window.onload = function() {
         if (verif(a, b))
         {
         	let resultat = parseFloat(a) / parseFloat(b);
-            if(b=="0") idResultat.innerHTML +=`<p>${a} / ${b} = <i>division par 0 impossible</i> </p>`;
+            if(b=="0") idResultat.innerHTML +=`<p>${a} <span>➗</span> ${b} = <i><font color="red">division par 0 impossible</i></font> </p>`;
 
         	else idResultat.innerHTML += `<p>${a} <span>➗</span> ${b} = ${resultat} </p>`; 
         }
@@ -100,7 +102,6 @@ window.onload = function() {
 	        {
 	    		span.innerHTML   = "❌";
                 idDivInvalide.style.visibility = "visible";
-
 	    	}
 	        else
 	        {    
